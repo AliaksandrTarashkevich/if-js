@@ -43,7 +43,7 @@ console.log(arr);
 
 for (i = 0; i < arr.length; i++) {
     debugger
-    arr[i].toString();
+    let word = arr[i].toString();
     console.log(word);
     word.replace('0', 'zero');
 }
