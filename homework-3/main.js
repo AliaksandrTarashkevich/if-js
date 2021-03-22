@@ -42,10 +42,12 @@ let arr = Array.from({length: 10}, () => Math.floor(Math.random() * 100));
 console.log(arr);
 
 for (i = 0; i < arr.length; i++) {
-    debugger
-    let word = arr[i].toString();
-    console.log(word);
-    word.replace('0', 'zero');
+    let word = String(arr[i]);
+    if (word.endsWith('0')) {
+        word = word.replace('0','zero');
+        arr[i] = word;
+    }
+    console.log(arr[i]);
 }
 
 console.log(arr);
