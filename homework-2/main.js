@@ -1,7 +1,9 @@
 let user = "John Doe";
-let student = "Alexander";
+console.log(user);
 
+let student = "Alexander";
 console.log(student);
+
 user = student;// now its Alexander
 console.log(user);
 ///////////////////////////////////////////////
@@ -10,9 +12,9 @@ test += 1; // its 2
 console.log(test);
 test -= 1; // its 1 again
 console.log(test);
-console.log(Boolean(test));
+console.log(!!test);
 
-let array1 = [2,3,5,8];
+let array1 = [2, 3, 5, 8];
 let sum = 1;
 for (let i = 0; i < array1.length; i++) {
     sum *= array1[i];
